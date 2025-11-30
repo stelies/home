@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelies's Bots & Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #ffffff;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6366f1;
+        }
+        .project-card {
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="min-h-screen container mx-auto px-4 sm:px-8 flex flex-col">
+
+        <header class="flex justify-between items-center py-6 border-b border-indigo-900/30">
+            <div class="flex items-center gap-3">
+                <i data-lucide="monitor-dot" class="w-8 h-8 text-indigo-400"></i>
+                <h1 class="text-2xl font-extrabold tracking-tighter text-white">
+                    /home - Steel's Bot Hub
+                </h1>
+            </div>
+            <!-- Navigation removed as requested -->
+        </header>
+
+        <main class="flex-grow py-16 lg:py-24">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-extrabold mb-4 tracking-tight leading-tight">
+                    My Bots and <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-white">Digital Creations</span>
+                </h2>
+                <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                    A portfolio showcasing my Discord bots, utilities, and general programming shenanigans.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- Project Card 1: InvGen -->
+                <div class="project-card bg-slate-900/50 border border-indigo-900/50 p-6 rounded-2xl hover:border-blue-500 transition duration-300 shadow-xl flex flex-col">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="logo.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/f59e0b/FFFFFF?text=Inv'" alt="InvGen Logo" class="w-12 h-12 rounded-full object-cover border-2 border-yellow-500">
+                        <h3 class="text-xl font-bold text-white">InvGen</h3>
+                    </div>
+                    <p class="text-gray-400 flex-grow mb-4">
+                        A Discord bot that generates up to 100 invitation links and finds the shortest, best one using custom prefixes and suffixes. Its prefix is <code class="bg-slate-800 p-0.5 rounded text-yellow-300">[</code> and it once found an invite link like <code class="bg-slate-800 p-0.5 rounded text-yellow-300">/4ntVVVVWac</code> in just 25 tries!
+                    </p>
+                    <div class="mt-auto">
+                        <a href="https://stelies.github.io/invgen" target="_blank" class="inline-flex items-center text-sm font-semibold text-yellow-400 hover:text-white transition">
+                            View Project Site <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: IsraelGPT -->
+                <div class="project-card bg-slate-900/50 border border-indigo-900/50 p-6 rounded-2xl hover:border-indigo-500 transition duration-300 shadow-xl flex flex-col">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="logo2.jpg" onerror="this.onerror=null;this.src='https://placehold.co/48x48/0038b8/FFFFFF?text=IGPT'" alt="IsraelGPT Logo" class="w-12 h-12 rounded-full object-cover border-2 border-blue-500">
+                        <h3 class="text-xl font-bold text-white">IsraelGPT (AI Bot)</h3>
+                    </div>
+                    <p class="text-gray-400 flex-grow mb-4">
+                        The satirical Discord bot powered by Gemini 1.5 Flash. 90% joke, 100% based.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="https://stelies.github.io/israelgpt" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-white transition">
+                            View Project Site <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section id="bot-descriptions" class="py-16 border-t border-indigo-900/30">
+            <h3 class="text-3xl font-bold text-center mb-10 text-white">What Do They Do?</h3>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="bg-slate-900/70 p-6 rounded-xl border border-yellow-700/50 flex flex-col md:flex-row gap-4">
+                    <h4 class="text-xl font-extrabold text-yellow-400 w-full md:w-1/4">InvGen:</h4>
+                    <p class="text-gray-300 w-full md:w-3/4">
+                        <span class="font-mono text-sm bg-yellow-900/50 rounded px-2 py-0.5 mr-2">[InvGen</span> is a niche Discord utility bot focused purely on generating custom invite links. It automates the process of generating up to 100 links at once, searching for the shortest, most appealing custom URL you desire (with prefix/suffix options). It's a lifesaver for server branding!
+                    </p>
+                </div>
+                <div class="bg-slate-900/70 p-6 rounded-xl border border-blue-700/50 flex flex-col md:flex-row gap-4">
+                    <h4 class="text-xl font-extrabold text-indigo-400 w-full md:w-1/4">IsraelGPT:</h4>
+                    <p class="text-gray-300 w-full md:w-3/4">
+                        A highly customized, satirical AI Discord bot. Unlike factual AIs, IsraelGPT delivers opinions, jokes, and highly biased (but entertaining) responses on political and cultural topics. It's meant strictly for fun and drama, running on an unstable VPS for that authentic low-cost vibe.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-10 text-center border-t border-indigo-900/30">
+            <p class="text-gray-500">Proudly developed by <span class="text-white font-bold">stelies</span>.</p>
+            <p class="text-gray-600 text-xs mt-1">&copy; 2025 Stelies's Projects. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
